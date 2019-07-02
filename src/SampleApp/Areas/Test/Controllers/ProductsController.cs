@@ -10,9 +10,11 @@ using Microsoft.EntityFrameworkCore;
 using ReflectionIT.Mvc.Paging;
 using SampleApp.Models.Database;
 
-namespace SampleApp.Controllers {
+namespace SampleApp.Controllers.Areas.Test {
+
 #pragma warning disable RIT0002 // Async method should be named with an Async suffix
 
+    [Area("Test")]
     public class ProductsController : Controller {
         private readonly NorthwindContext _context;
 
